@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: fa46b21bd3add7b479b8b230db3228e6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__7a9214fd-568a-457b-a921-28c356115f28.png
+    assetPath: Assets\BenyRig01__gltf\_Group__7a9214fd-568a-457b-a921-28c356115f28.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\1_21bb2475-a8f7-48ce-b0cf-a7de961e9e83.png
+    assetPath: Assets\BenyRig01__gltf\1_21bb2475-a8f7-48ce-b0cf-a7de961e9e83.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\2_0685e021-9c94-4bdf-a1d6-721f3e712f0b.png
+    assetPath: Assets\BenyRig01__gltf\2_0685e021-9c94-4bdf-a1d6-721f3e712f0b.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\3_f0439cbf-9c0e-4653-928b-f8981f8a0c7a.png
+    assetPath: Assets\BenyRig01__gltf\3_f0439cbf-9c0e-4653-928b-f8981f8a0c7a.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\4_a26eb518-eafb-454b-94ff-9dcbfe0f1e20.png
+    assetPath: Assets\BenyRig01__gltf\4_a26eb518-eafb-454b-94ff-9dcbfe0f1e20.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\5_949a176b-9284-4c4f-b707-39d86adfc26b.png
+    assetPath: Assets\BenyRig01__gltf\5_949a176b-9284-4c4f-b707-39d86adfc26b.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\6_79c06f72-f6a5-46dc-8dfe-1d2e79df4303.png
+    assetPath: Assets\BenyRig01__gltf\6_79c06f72-f6a5-46dc-8dfe-1d2e79df4303.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\7_b8876eb9-a38a-4fe9-a27f-46154740d216.png
+    assetPath: Assets\BenyRig01__gltf\7_b8876eb9-a38a-4fe9-a27f-46154740d216.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\8_cddd3664-895f-43f5-b44d-1ae47a26aa6b.png
+    assetPath: Assets\BenyRig01__gltf\8_cddd3664-895f-43f5-b44d-1ae47a26aa6b.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\9_c2292391-079a-4cfc-a5cf-70903334be49.png
+    assetPath: Assets\BenyRig01__gltf\9_c2292391-079a-4cfc-a5cf-70903334be49.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\10_2b0b18ad-2b54-4c9d-8585-934d34444361.png
+    assetPath: Assets\BenyRig01__gltf\10_2b0b18ad-2b54-4c9d-8585-934d34444361.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__35eea692-9f26-4ee9-a1e4-3f3c13790ce8.png
+    assetPath: Assets\BenyRig01__gltf\_Group__35eea692-9f26-4ee9-a1e4-3f3c13790ce8.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\EarsL_72cf45c2-cf8e-4283-b462-3bc43628bdf3.png
+    assetPath: Assets\BenyRig01__gltf\EarsL_72cf45c2-cf8e-4283-b462-3bc43628bdf3.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\EyebrowL_f67ec364-d959-4ff4-ad16-4688f965c4c1.png
+    assetPath: Assets\BenyRig01__gltf\EyebrowL_f67ec364-d959-4ff4-ad16-4688f965c4c1.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\EyebrowR_a062d186-bb15-41bb-b27b-d37ec9c0a9ca.png
+    assetPath: Assets\BenyRig01__gltf\EyebrowR_a062d186-bb15-41bb-b27b-d37ec9c0a9ca.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path_______Path_______Path_____00c33e5b-eefb-46f0-882e-4ceff5ffa837.png
+    assetPath: Assets\BenyRig01__gltf\_Path_______Path_______Path_____00c33e5b-eefb-46f0-882e-4ceff5ffa837.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__6f67f80a-3305-4130-b308-e010e3a70759.png
+    assetPath: Assets\BenyRig01__gltf\_Group__6f67f80a-3305-4130-b308-e010e3a70759.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path_______Path_______Path_____f6f51728-2f83-4bd3-a729-4805338b1a7c.png
+    assetPath: Assets\BenyRig01__gltf\_Path_______Path_______Path_____f6f51728-2f83-4bd3-a729-4805338b1a7c.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__5a182bcb-48e8-43c2-ba4c-862d48cc527c.png
+    assetPath: Assets\BenyRig01__gltf\_Group__5a182bcb-48e8-43c2-ba4c-862d48cc527c.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\Nose_eedcadc1-6b67-4146-81a9-07122117acc9.png
+    assetPath: Assets\BenyRig01__gltf\Nose_eedcadc1-6b67-4146-81a9-07122117acc9.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path_______Path_______Path_____e51501c2-8323-4fd0-81d0-f018f175d5af.png
+    assetPath: Assets\BenyRig01__gltf\_Path_______Path_______Path_____e51501c2-8323-4fd0-81d0-f018f175d5af.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__df15db78-5744-4678-87f7-e9dc3cf3d4bf.png
+    assetPath: Assets\BenyRig01__gltf\_Group__df15db78-5744-4678-87f7-e9dc3cf3d4bf.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path__4db361e5-4665-4fc6-83f8-7d644dea1b37.png
+    assetPath: Assets\BenyRig01__gltf\_Path__4db361e5-4665-4fc6-83f8-7d644dea1b37.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__87373094-cdc1-4948-a3c5-2c2b6eb38a20.png
+    assetPath: Assets\BenyRig01__gltf\_Group__87373094-cdc1-4948-a3c5-2c2b6eb38a20.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__6b06ae48-8d7d-4605-b0f1-299613880b01.png
+    assetPath: Assets\BenyRig01__gltf\_Group__6b06ae48-8d7d-4605-b0f1-299613880b01.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__e051604d-6933-42e5-bc90-68d301ca3899.png
+    assetPath: Assets\BenyRig01__gltf\_Group__e051604d-6933-42e5-bc90-68d301ca3899.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__6aaf35a1-1156-4368-a61f-a7001648da61.png
+    assetPath: Assets\BenyRig01__gltf\_Group__6aaf35a1-1156-4368-a61f-a7001648da61.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__6eb3cc06-e792-4edf-9020-871837046f8a.png
+    assetPath: Assets\BenyRig01__gltf\_Group__6eb3cc06-e792-4edf-9020-871837046f8a.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path__1b65aacc-9180-420e-bf6c-ddb7a2510758.png
+    assetPath: Assets\BenyRig01__gltf\_Path__1b65aacc-9180-420e-bf6c-ddb7a2510758.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path__82337a97-2f1c-46bb-b66a-9f2ede308f84.png
+    assetPath: Assets\BenyRig01__gltf\_Path__82337a97-2f1c-46bb-b66a-9f2ede308f84.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__714f929b-dbf0-44f5-98d0-66910673f45b.png
+    assetPath: Assets\BenyRig01__gltf\_Group__714f929b-dbf0-44f5-98d0-66910673f45b.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path__049ef4fd-dad6-4691-abf5-6247fb730122.png
+    assetPath: Assets\BenyRig01__gltf\_Path__049ef4fd-dad6-4691-abf5-6247fb730122.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__985bba75-f5a7-40a8-98c9-1c76707161d0.png
+    assetPath: Assets\BenyRig01__gltf\_Group__985bba75-f5a7-40a8-98c9-1c76707161d0.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path__3c8f6fde-59cf-4cd5-8a1e-b58de756545f.png
+    assetPath: Assets\BenyRig01__gltf\_Path__3c8f6fde-59cf-4cd5-8a1e-b58de756545f.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__05b687b8-da2a-4fcd-a380-67fbbec5affe.png
+    assetPath: Assets\BenyRig01__gltf\_Group__05b687b8-da2a-4fcd-a380-67fbbec5affe.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Path__2f6d0fa2-1b25-4477-8c3d-64588ecd12ea.png
+    assetPath: Assets\BenyRig01__gltf\_Path__2f6d0fa2-1b25-4477-8c3d-64588ecd12ea.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__b4c57de5-b9e1-4bb8-8d7f-11bde8c4af33.png
+    assetPath: Assets\BenyRig01__gltf\_Group__b4c57de5-b9e1-4bb8-8d7f-11bde8c4af33.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-Hand_8f114358-c089-44fb-8142-04dec61df5d1.png
+    assetPath: Assets\BenyRig01__gltf\R-Hand_8f114358-c089-44fb-8142-04dec61df5d1.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-UpperHand_62b0c1ba-58cf-4181-84d5-ae084c3f1979.png
+    assetPath: Assets\BenyRig01__gltf\R-UpperHand_62b0c1ba-58cf-4181-84d5-ae084c3f1979.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\L-Sleeve_95967b4b-6220-4f7e-95a4-cb662c47922b.png
+    assetPath: Assets\BenyRig01__gltf\L-Sleeve_95967b4b-6220-4f7e-95a4-cb662c47922b.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\1_8ea2f563-056e-4593-a772-2367010dccee.png
+    assetPath: Assets\BenyRig01__gltf\1_8ea2f563-056e-4593-a772-2367010dccee.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\2_4d31e93d-55bb-4b5f-af64-ef79410690a9.png
+    assetPath: Assets\BenyRig01__gltf\2_4d31e93d-55bb-4b5f-af64-ef79410690a9.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\3_9f57bfc3-d62b-4c0b-a3b3-360f0d481ac1.png
+    assetPath: Assets\BenyRig01__gltf\3_9f57bfc3-d62b-4c0b-a3b3-360f0d481ac1.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\4_ccc09a13-8dfb-402c-bf53-55998d681c42.png
+    assetPath: Assets\BenyRig01__gltf\4_ccc09a13-8dfb-402c-bf53-55998d681c42.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\5_0ecc4a2e-1011-4a54-bb71-4da4de009101.png
+    assetPath: Assets\BenyRig01__gltf\5_0ecc4a2e-1011-4a54-bb71-4da4de009101.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\6_292cabcd-e75e-4f08-99f7-ba6460d83a3e.png
+    assetPath: Assets\BenyRig01__gltf\6_292cabcd-e75e-4f08-99f7-ba6460d83a3e.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\7_431a4962-4b27-4dfd-938e-783824773460.png
+    assetPath: Assets\BenyRig01__gltf\7_431a4962-4b27-4dfd-938e-783824773460.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\Tie_6f74f1e1-f59c-4fac-bf98-670fa8ddb812.png
+    assetPath: Assets\BenyRig01__gltf\Tie_6f74f1e1-f59c-4fac-bf98-670fa8ddb812.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\Body_4b9a982f-da50-488b-a1a9-58a9eedc1eae.png
+    assetPath: Assets\BenyRig01__gltf\Body_4b9a982f-da50-488b-a1a9-58a9eedc1eae.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-Knee_9d9ead90-ee4b-44de-8ebb-6ffd2384a80c.png
+    assetPath: Assets\BenyRig01__gltf\R-Knee_9d9ead90-ee4b-44de-8ebb-6ffd2384a80c.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-Leg_1a814c57-5a88-4b64-b9f0-b0d7b1a6dfe5.png
+    assetPath: Assets\BenyRig01__gltf\R-Leg_1a814c57-5a88-4b64-b9f0-b0d7b1a6dfe5.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-UpperLeg_6e95c527-53af-4abb-a1de-33acb5697faf.png
+    assetPath: Assets\BenyRig01__gltf\R-UpperLeg_6e95c527-53af-4abb-a1de-33acb5697faf.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\Hip_0efa7769-ff00-4e9a-bbf4-e983c8c552b4.png
+    assetPath: Assets\BenyRig01__gltf\Hip_0efa7769-ff00-4e9a-bbf4-e983c8c552b4.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-foot_5a0efe69-a148-4fb4-b4ac-8fffa085eb0d.png
+    assetPath: Assets\BenyRig01__gltf\R-foot_5a0efe69-a148-4fb4-b4ac-8fffa085eb0d.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-Knee_955edae9-3c00-407f-b6bf-dd1165b21022.png
+    assetPath: Assets\BenyRig01__gltf\R-Knee_955edae9-3c00-407f-b6bf-dd1165b21022.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\R-Leg_3e2cf170-9d73-4b98-83fd-4cd7a1d48dc7.png
+    assetPath: Assets\BenyRig01__gltf\R-Leg_3e2cf170-9d73-4b98-83fd-4cd7a1d48dc7.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\_Group__954c82f2-da0f-4a82-b9f0-502fa9281917.png
+    assetPath: Assets\BenyRig01__gltf\_Group__954c82f2-da0f-4a82-b9f0-502fa9281917.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\L-foot_7558cb1e-13e2-4a43-be9d-7fcd8ea7f88c.png
+    assetPath: Assets\BenyRig01__gltf\L-foot_7558cb1e-13e2-4a43-be9d-7fcd8ea7f88c.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\L-Hand_976a1f58-8eed-4b2a-80d3-c6d8f34c196f.png
+    assetPath: Assets\BenyRig01__gltf\L-Hand_976a1f58-8eed-4b2a-80d3-c6d8f34c196f.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\L-Upperhand_0ffe3231-4e36-4b2c-8444-b7b566b3029a.png
+    assetPath: Assets\BenyRig01__gltf\L-Upperhand_0ffe3231-4e36-4b2c-8444-b7b566b3029a.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\L-Sleeve_6dff1938-6b46-435a-af26-5d979a3a4d32.png
+    assetPath: Assets\BenyRig01__gltf\L-Sleeve_6dff1938-6b46-435a-af26-5d979a3a4d32.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\1_e0b67411-693a-494b-a365-83f299a5db8f.png
+    assetPath: Assets\BenyRig01__gltf\1_e0b67411-693a-494b-a365-83f299a5db8f.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\2_abdc8b15-a831-48bf-8196-5063f8891b18.png
+    assetPath: Assets\BenyRig01__gltf\2_abdc8b15-a831-48bf-8196-5063f8891b18.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\3_2e9e4c45-dad5-4cd8-9174-0ca22913c085.png
+    assetPath: Assets\BenyRig01__gltf\3_2e9e4c45-dad5-4cd8-9174-0ca22913c085.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\4_c22f0e92-0853-4eed-b92e-d656072dd0cd.png
+    assetPath: Assets\BenyRig01__gltf\4_c22f0e92-0853-4eed-b92e-d656072dd0cd.png
+  - type: 1
+    originalUri: Assets\BenyRig01__gltf\5_a8ce450f-73ae-41e1-8bc1-2fc1df205e35.png
+    assetPath: Assets\BenyRig01__gltf\5_a8ce450f-73ae-41e1-8bc1-2fc1df205e35.png
+  reportItems:
+  - type: 2
+    code: 19
+    messages: []
