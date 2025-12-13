@@ -702,7 +702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8771091787928289351, guid: 52f9656bf986c2b4fb15f69d60288a05, type: 3}
       propertyPath: m_Name
-      value: Runwalk
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 9111164431478599303, guid: 52f9656bf986c2b4fb15f69d60288a05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
