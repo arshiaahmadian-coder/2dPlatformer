@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             animator.SetBool("isRunning", false);
+            animator.SetBool("isWalking", false);
             return;
         }
 
@@ -41,9 +42,11 @@ public class PlayerMovement : MonoBehaviour
         if (speed == walkSpeed)
         {
             animator.SetBool("isRunning", false);
+            animator.SetBool("isWalking", true);
         } else if (speed == runSpeed)
         {
             animator.SetBool("isRunning", true);
+            animator.SetBool("isWalking", false);
         }
     }
 
