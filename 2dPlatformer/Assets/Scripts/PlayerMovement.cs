@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private bool canJump = true;
     private bool isSitting = false;
-
     private bool isGrounded;
 
     void Start()
@@ -31,6 +30,21 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         joystick = FindFirstObjectByType<Joystick>();
         animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if (!isGrounded)
+        {
+            if (rb.linearVelocity.y > 0.1f)
+            {
+                animator.SetBool("isRising", true);
+            }
+            else if (rb.linearVelocity.y < -0.1f)
+            {
+                animator.SetBool("isRising", false);
+            }
+        }
     }
 
     void FixedUpdate()
@@ -43,11 +57,11 @@ public class PlayerMovement : MonoBehaviour
         float absH = Mathf.Abs(h);
         float speed = absH < 0.7f ? walkSpeed : runSpeed;
 
-        if(v < -jumpSitThreshold)
+        if (v < -jumpSitThreshold)
         {
             isSitting = true;
-            // speed = sitWalkSpeed;
-        } else
+        }
+        else
         {
             isSitting = false;
         }
@@ -61,12 +75,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if(isSitting)
-                rb.linearVelocity = new Vector2(Mathf.Sign(h) * sitWalkSpeed, rb.linearVelocity.y);
-            else
-                rb.linearVelocity = new Vector2(Mathf.Sign(h) * speed, rb.linearVelocity.y);
+            float currentSpeed = isSitting ? sitWalkSpeed : speed;
+            rb.linearVelocity = new Vector2(Mathf.Sign(h) * currentSpeed, rb.linearVelocity.y);
 
-            animator.SetBool("isWalking", speed == walkSpeed);
+            animator.SetBool("isWalking", speed == walkSpeed && !isSitting);
             animator.SetBool("isRunning", speed == runSpeed);
 
             Flip(h);
@@ -74,22 +86,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (v > jumpSitThreshold && isGrounded && canJump)
         {
-            Vector2 jumpDir = new Vector2(0, 1f).normalized;
+            animator.SetBool("isRising", true);
 
-            rb.AddForce(jumpDir * jumpForce, ForceMode2D.Impulse);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
             animator.SetTrigger("jump");
-            isGrounded = false;
             canJump = false;
             Invoke(nameof(ResetJumpCD), jumpCD);
         }
-    }
-
-    void Flip(float h)
-    {
-        if (h > 0.05f)
-            transform.localScale = new Vector3(3f, transform.localScale.y, transform.localScale.z);
-        else if (h < -0.05f)
-            transform.localScale = new Vector3(-3f, transform.localScale.y, transform.localScale.z);
     }
 
     void GroundCheck()
@@ -101,7 +106,22 @@ public class PlayerMovement : MonoBehaviour
             groundLayer
         );
 
+        bool wasGrounded = isGrounded;
         isGrounded = hit.collider != null;
+        animator.SetBool("isGrounded", isGrounded);
+
+        if (!wasGrounded && isGrounded)
+        {
+            animator.SetBool("isRising", false);
+        }
+    }
+
+    void Flip(float h)
+    {
+        if (h > 0.05f)
+            transform.localScale = new Vector3(3f, transform.localScale.y, transform.localScale.z);
+        else if (h < -0.05f)
+            transform.localScale = new Vector3(-3f, transform.localScale.y, transform.localScale.z);
     }
 
     private void OnDrawGizmos()
