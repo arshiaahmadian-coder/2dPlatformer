@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float walkSpeed;
     [SerializeField] private float runSpeed;
     [SerializeField] private float sitWalkSpeed;
+    [SerializeField] private float jumpMoveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpCD;
 
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canJump = true;
     private bool isSitting = false;
     private bool isGrounded;
+    private bool canMove = true;
 
     void Start()
     {
@@ -75,15 +77,20 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            float currentSpeed = isSitting ? sitWalkSpeed : speed;
-            rb.linearVelocity = new Vector2(Mathf.Sign(h) * currentSpeed, rb.linearVelocity.y);
+            if(canMove)
+            {
+                float currentSpeed = isSitting ? sitWalkSpeed : speed;
+                currentSpeed = isGrounded ? currentSpeed : jumpMoveSpeed;
+                rb.linearVelocity = new Vector2(Mathf.Sign(h) * currentSpeed, rb.linearVelocity.y);
 
-            animator.SetBool("isWalking", speed == walkSpeed && !isSitting);
-            animator.SetBool("isRunning", speed == runSpeed);
+                animator.SetBool("isWalking", speed == walkSpeed);
+                animator.SetBool("isRunning", speed == runSpeed);
+            }
 
             Flip(h);
         }
 
+        // jump
         if (v > jumpSitThreshold && isGrounded && canJump)
         {
             animator.SetBool("isRising", true);
@@ -138,5 +145,10 @@ public class PlayerMovement : MonoBehaviour
     private void ResetJumpCD()
     {
         canJump = true;
+    }
+
+    public void ReverseCanMove()
+    {
+        canMove = !canMove;
     }
 }
