@@ -1227,7 +1227,7 @@ MonoBehaviour:
   sitWalkSpeed: 3
   jumpMoveSpeed: 6
   jumpForce: 100
-  jumpCD: 2
+  jumpCD: 0
   walkThreshold: 0.3
   jumpSitThreshold: 0.5
   groundCheckPoint: {fileID: 2019439744}
