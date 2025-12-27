@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float groundCheckDistance = 0.2f;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("sit collider")]
+    [SerializeField] private float sitYOfset;
+    [SerializeField] private float sitYSize;
+
     private Rigidbody2D rb;
     private Joystick joystick;
     private Animator animator;
@@ -26,26 +30,38 @@ public class PlayerMovement : MonoBehaviour
     private bool isSitting = false;
     private bool isGrounded;
     private bool canMove = true;
+    private CapsuleCollider2D playerCollider;
+
+    private float standYOfset;
+    private float standYSize;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         joystick = FindFirstObjectByType<Joystick>();
         animator = GetComponent<Animator>();
+
+        playerCollider = GetComponent<CapsuleCollider2D>();
+        standYOfset = playerCollider.offset.y;
+        standYSize = playerCollider.size.y;
     }
 
     private void Update()
     {
         if (!isGrounded)
-        {
             if (rb.linearVelocity.y > 0.1f)
-            {
                 animator.SetBool("isRising", true);
-            }
             else if (rb.linearVelocity.y < -0.1f)
-            {
                 animator.SetBool("isRising", false);
-            }
+
+        if (isSitting)
+        {
+            playerCollider.offset = new Vector2(playerCollider.offset.x, sitYOfset);
+            playerCollider.size = new Vector2(playerCollider.size.x, sitYSize);
+        } else if (standYSize != playerCollider.size.y)
+        {
+            playerCollider.offset = new Vector2(playerCollider.offset.x, standYOfset);
+            playerCollider.size = new Vector2(playerCollider.size.x, standYSize);
         }
     }
 
@@ -126,9 +142,9 @@ public class PlayerMovement : MonoBehaviour
     void Flip(float h)
     {
         if (h > 0.05f)
-            transform.localScale = new Vector3(3f, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(2.5f, transform.localScale.y, transform.localScale.z);
         else if (h < -0.05f)
-            transform.localScale = new Vector3(-3f, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(-2.5f, transform.localScale.y, transform.localScale.z);
     }
 
     private void OnDrawGizmos()
